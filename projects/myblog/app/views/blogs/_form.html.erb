@@ -1,0 +1,12 @@
+<%= simple_form_for(@blog) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :blog_title, label: 'Your Blog Title Please.', error: 'This field is required' %>
+    <%= f.input :blog_decription, label: 'Please provide a brief description.', error: 'This field is required' %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
